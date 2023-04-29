@@ -1,0 +1,62 @@
+/* 
+  ATCChatLocalizable.strings
+  StoreLocator
+
+  Created by Duy Bui on 12/7/19.
+  Copyright © 2019 Instamobile. All rights reserved.
+*/
+
+"Your Story" = "قصتك";
+"Accept" = "قبول";
+"Share posts, photos and comments with your network." = "مشاركة المشاركات والصور والتعليقات مع شبكتك.";
+"Stories" = "قصص";
+"Share stories that disappear after 24h." = "مشاركة القصص التي تختفي بعد 24 ساعة.";
+"Check in" = "تحقق في";
+"Check in when posting to share your location with friends." = "تحقق عند النشر لمشاركة موقعك مع الأصدقاء.";
+"Reactions" = "تفاعل";
+"React to posts and photos with likes, dislikes and more." = "رد على المشاركات والصور التي أعجبتني ، لم تعجبني والمزيد.";
+"Communicate with your friends via private messages." = "تواصل مع أصدقائك عبر الرسائل الخاصة.";
+"Group Chats" = "دردشات المجموعة";
+"Have fun with your gang with in group chats." = "استمتع مع جماعتك في دردشات جماعية.";
+"Get Notified" = "الحصول على إخطار";
+"Receive notifications when friends are looking for you." = "تلقي الإخطارات عندما يبحث الأصدقاء عنك.";
+"Web" = "الويب";
+"No Friends" = "لا أصدقاء";
+"Add some friends and then create a group." = "أضف بعض الأصدقاء ثم أنشئ مجموعة.";
+"Your friends will show up here. Search and add your friends." = "سيظهر أصدقاؤك هنا. ابحث وأضف أصدقاءك.";
+"Creating" = "خلق";
+"Create Group" = "إنشاء مجموعة";
+"Chat" = "دردشة";
+"Search for friends" = "البحث عن أصدقاء";
+"No Conversations" = "لا محادثات";
+"Your conversations will show up here. Match with people and start messaging them." = "ستظهر محادثاتك هنا. تطابق مع الأشخاص وابدأ المراسلة معهم.";
+"Add friends and start conversations with them. Your conversations will show up here." = "أضف أصدقاء وابدأ محادثات معهم. ستظهر محادثاتك هنا.";
+"Add Friends" = "اضف اصدقاء";
+"Someone sent an audio message." = "أرسل شخص ما رسالة صوتية.";
+"Someone sent a photo." = "شخص أرسل صورة.";
+"Sending" = "إرسال";
+"Group Settings" = "إعدادات المجموعة";
+"Rename Group" = "إعادة تسمية المجموعة";
+"Leave Group" = "غادر المجموعة";
+"Change Name" = "تغيير الإسم";
+"Enter Group Name" = "أدخل اسم المجموعة";
+"Are you sure?" = "هل أنت واثق؟";
+"Actions on " = "الإجراءات على";
+"Block user" = "مستخدم محضور";
+"Report user" = "أبلغ عن مستخدم";
+"Why are you reporting this account?" = "لماذا تبلغ عن هذا الحساب؟";
+"Spam" = "بريد مؤذي";
+"Sensitive photos" = "الصور الحساسة";
+"Abusive content" = "المحتوى المسيء";
+"Harmful information" = "معلومات ضارة";
+"This user has been blocked successfully." = "تم حظر هذا المستخدم بنجاح.";
+"An error has occured. Please try again." = "لقد حدث خطأ. يرجى المحاولة مرة أخرى.";
+"This user has been reported successfully." = "تم الإبلاغ عن هذا المستخدم بنجاح.";
+"An error has occured. Please try again." = "لقد حدث خطأ. يرجى المحاولة مرة أخرى.";
+"sent you a friend request" = "أرسل لك طلب صداقة";
+"Adding" = "إضافة";
+"Contacts" = "جهات الاتصال";
+"accepted your friend request" = "قبلت طلب صديقك";
+"Allow Push Notifications" = "السماح بإشعارات الدفع";
+"Enable Face/Touch ID" = "تمكين معرف الوجه / اللمس";
+"General" = "جنرال لواء";

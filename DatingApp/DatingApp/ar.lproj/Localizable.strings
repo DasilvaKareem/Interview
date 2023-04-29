@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  DatingApp
+
+  Created by Duy Bui on 12/13/19.
+  Copyright © 2019 Instamobile. All rights reserved.
+*/
+"Find your soul mate" = "ابحث عن رفيقة روحك";
+"Match and chat with people you like from your area." = "تطابق ودردش مع أشخاص تحبهم من منطقتك.";
+"Import Instagram Photos" = "استيراد صور Instagram";
+"My Photos" = "صوري";
+"Let's complete your dating profile" = "دعنا نكمل ملف تعريفك في المواعدة";
+"Welcome to Instaswipey. Let's complete your dating profile to allow other people to express interest in you." = "مرحبًا بك في Instaswipey. دعنا نستكمل ملف تعريف المواعدة للسماح للآخرين بالتعبير عن اهتمامك";
+"Let's go" = "لنذهب";
+"Actions on " = "الإجراءات على";
+"Block user" = "مستخدم محضور";
+"Report user" = "أبلغ عن مستخدم";
+"Cancel" = "إلغاء";
+"Why are you reporting this account?" = "لماذا تبلغ عن هذا الحساب؟";
+"Spam" = "بريد مؤذي";
+"Sensitive photos" = "الصور الحساسة";
+"Abusive content" = "المحتوى المسيء";
+"Harmful information" = "معلومات ضارة";
+"This user has been blocked successfully." = "تم حظر هذا المستخدم بنجاح.";
+"An error has occured. Please try again." = "لقد حدث خطأ. يرجى المحاولة مرة أخرى.";
+"This user has been reported successfully." = "تم الإبلاغ عن هذا المستخدم بنجاح.";
+"SEND A MESSAGE" = "ارسل رسالة";
+"KEEP SWIPING" = "ابق الضرب";
+"IT'S A MATCH!" = "انها مباراة!";
+"Recent Photos" = "الصور الحديثة";
+"No Photos" = "لا توجد صور";
+"Add some photos to let people find you." = "أضف بعض الصور للسماح للأشخاص بالعثور عليك";
+"Remove photo" = "إزالة الصورة";
+"Sending" = "إرسال";
+"Import from Library" = "استيراد من المكتبة";
+"Add Photo" = "إضافة صورة";
+"Take Photo" = "تصوير";
+"Choose Profile Photo" = "اختر صورة الملف الشخصي";
+"Add Profile Photo" = "إضافة صورة الشخصي";
+"Next" = "التالى";
+"Error uploading" = "خطأ في التحميل";
+"The photo was not uploaded. Please check that your server accepts image uploads (e.g. is Firebase Storage enabled?)." = "لم يتم تحميل الصورة. يرجى التحقق من أن خادمك يقبل عمليات تحميل الصور (على سبيل المثال ، هل تم تمكين Firebase Storage؟).";
+"Log In" = "تسجيل الدخول";
+"Sign Up" = "سجل";
+"E-mail or phone number" = "البريد الإلكتروني أو رقم الهاتف";
+"Password" = "كلمه السر";
+"Sign In" = "تسجيل الدخول";
+"Facebook Login" = "تسجيل الدخول الى الفيسبوك";
+"OR" = "أو";
+"Full Name" = "الاسم بالكامل";
+"Phone Number" = "رقم الهاتف";
+"E-mail Address" = "عنوان البريد الإلكتروني";
+"Password" = "كلمه السر";
+"Create new account" = "انشاء حساب جديد";
+"Sign Up" = "سجل";
+"Settings" = "الإعدادات";
+"Account Details" = "تفاصيل الحساب";
+"Contact Us" = "اتصل بنا";
+"No matches" = "لا مباريات";
+"Your matches will show up here." = "ستظهر مبارياتك هنا.";

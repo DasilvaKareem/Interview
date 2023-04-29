@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  DatingApp
+
+  Created by Duy Bui on 12/13/19.
+  Copyright © 2019 Instamobile. All rights reserved.
+*/
+
+// Apply for third-party library (e.g. Eureka)
+"Cancel" = "Cancel";

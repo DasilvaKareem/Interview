@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="ATCChatGroupMembersTableViewCell" customModule="ChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gx1-43-MzM">
+                        <rect key="frame" x="8" y="10" width="307" height="47"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xSG-dS-PlM">
+                                <rect key="frame" x="0.0" y="4.5" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="bJL-dS-agT"/>
+                                    <constraint firstAttribute="width" secondItem="xSG-dS-PlM" secondAttribute="height" id="lE7-la-GzJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIl-X8-hGS">
+                                <rect key="frame" x="48" y="13.5" width="167" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mz-qi-m19">
+                                <rect key="frame" x="225" y="16.5" width="36" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="kwW-2X-WSZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIP-nI-WbT">
+                                <rect key="frame" x="271" y="5.5" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="QC3-IQ-Y6a"/>
+                                    <constraint firstAttribute="width" secondItem="mIP-nI-WbT" secondAttribute="height" multiplier="1:1" id="vei-ga-lEu"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="more"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gx1-43-MzM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="SoV-H8-Sht"/>
+                    <constraint firstAttribute="bottom" secondItem="Gx1-43-MzM" secondAttribute="bottom" constant="10" id="b6A-D9-K5M"/>
+                    <constraint firstItem="Gx1-43-MzM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="gn2-zo-gc2"/>
+                    <constraint firstAttribute="trailing" secondItem="Gx1-43-MzM" secondAttribute="trailing" constant="8" id="qsE-T5-sf8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="adminLabel" destination="0mz-qi-m19" id="JUt-oM-zmQ"/>
+                <outlet property="memberActionBtn" destination="mIP-nI-WbT" id="alG-z9-KEm"/>
+                <outlet property="memberImage" destination="xSG-dS-PlM" id="lWm-Sw-J1y"/>
+                <outlet property="memberName" destination="NIl-X8-hGS" id="OiW-qS-i10"/>
+            </connections>
+            <point key="canvasLocation" x="135.50724637681159" y="138.28125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="more" width="30" height="30"/>
+    </resources>
+</document>

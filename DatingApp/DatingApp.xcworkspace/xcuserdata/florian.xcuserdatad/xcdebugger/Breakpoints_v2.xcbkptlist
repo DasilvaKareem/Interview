@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AFE95DD6-2780-4F1B-A246-7E4B369F6634"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "741D9439-A31D-4723-B21E-D01D9B6D6E2A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D72A4FB-2AB1-4214-B604-8044430744DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "2D72A4FB-2AB1-4214-B604-8044430744DB - c97b2f7fd9fc0a11"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Array&lt;DatingApp.ATCDatingSwipe&gt;) -&gt; () in closure #1 (Swift.Set&lt;Swift.String&gt;) -&gt; () in DatingApp.ATCDatingFeedFirebaseDataSource.fetchDatingRecommendations() -&gt; ()"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florian/workspace/app-templates-ios/Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "1181">
+               </Location>
+               <Location
+                  uuid = "2D72A4FB-2AB1-4214-B604-8044430744DB - 1d8fd15ce4b19826"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (DatingApp.ATCDatingProfile) -&gt; Swift.Bool in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Array&lt;DatingApp.ATCDatingSwipe&gt;) -&gt; () in closure #1 (Swift.Set&lt;Swift.String&gt;) -&gt; () in DatingApp.ATCDatingFeedFirebaseDataSource.fetchDatingRecommendations() -&gt; ()"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florian/workspace/app-templates-ios/Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59E7C0FC-9DA6-4452-8979-ECA7FDAC4354"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "59E7C0FC-9DA6-4452-8979-ECA7FDAC4354 - c97b2f7fd9fc0a11"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Array&lt;DatingApp.ATCDatingSwipe&gt;) -&gt; () in closure #1 (Swift.Set&lt;Swift.String&gt;) -&gt; () in DatingApp.ATCDatingFeedFirebaseDataSource.fetchDatingRecommendations() -&gt; ()"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florian/workspace/app-templates-ios/Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "2325">
+               </Location>
+               <Location
+                  uuid = "59E7C0FC-9DA6-4452-8979-ECA7FDAC4354 - 8cffadc5ee476ea7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (DatingApp.ATCDatingProfile) -&gt; Swift.Bool in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Array&lt;DatingApp.ATCDatingSwipe&gt;) -&gt; () in closure #1 (Swift.Set&lt;Swift.String&gt;) -&gt; () in DatingApp.ATCDatingFeedFirebaseDataSource.fetchDatingRecommendations() -&gt; ()"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florian/workspace/app-templates-ios/Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47EF22B5-910D-41EC-8C64-6FB21C9973C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "01E649BA-62CE-4B23-A68B-D55654A2D7F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "01E649BA-62CE-4B23-A68B-D55654A2D7F7 - c97b2f7fd9fc0a11"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Array&lt;DatingApp.ATCDatingSwipe&gt;) -&gt; () in closure #1 (Swift.Set&lt;Swift.String&gt;) -&gt; () in DatingApp.ATCDatingFeedFirebaseDataSource.fetchDatingRecommendations() -&gt; ()"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florian/workspace/app-templates-ios/Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "3189">
+               </Location>
+               <Location
+                  uuid = "01E649BA-62CE-4B23-A68B-D55654A2D7F7 - af9f24cbc2589da9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (DatingApp.ATCDatingProfile) -&gt; Swift.Bool in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Array&lt;DatingApp.ATCDatingSwipe&gt;) -&gt; () in closure #1 (Swift.Set&lt;Swift.String&gt;) -&gt; () in DatingApp.ATCDatingFeedFirebaseDataSource.fetchDatingRecommendations() -&gt; ()"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florian/workspace/app-templates-ios/Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39F9FA0F-C298-4CBD-9630-C54420EA18C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "39F9FA0F-C298-4CBD-9630-C54420EA18C5 - 8059e1712e2dcbb5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DatingApp.ATCDatingFeedFirebaseDataSource.fetchDatingRecommendations() -&gt; ()"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florian/workspace/app-templates-ios/Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "837">
+               </Location>
+               <Location
+                  uuid = "39F9FA0F-C298-4CBD-9630-C54420EA18C5 - 4916d53611a3e958"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Set&lt;Swift.String&gt;) -&gt; () in DatingApp.ATCDatingFeedFirebaseDataSource.fetchDatingRecommendations() -&gt; ()"
+                  moduleName = "DatingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/florian/workspace/app-templates-ios/Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "134">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB3F9EE9-4BE2-4A56-BF2F-A08413846493"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Core/Dating/ATCDatingFeedFirebaseDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BBE535A-2121-432B-9304-B25A8B7D5CF3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DatingApp/DatingFeedViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7731C220-406C-496C-B832-BFE8FC2A5F9D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Core/ReusableSwiftUI/UpgradeAccountView/ATCUpgradeAccountView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "subscriptionAction(selectedSubscription:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
