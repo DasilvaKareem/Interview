@@ -31,7 +31,7 @@ class ATCFriendsAdapter: ATCGenericCollectionRowAdapter {
             cell.nameLabel.font = uiConfig.boldSmallFont
             cell.nameLabel.textColor = uiConfig.mainTextColor
             
-            cell.borderView.backgroundColor = UIColor(hexString: "#e6e6e6")
+            cell.borderView.backgroundColor = UIColor(hexString: "#A8c4A3")
             
             cell.chekedImageView.image = UIImage.localImage("checked-icon")
             cell.chekedImageView.isHidden = true

@@ -2,39 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
-	<string>ca-app-pub-3940256099942544/2934735716</string>
-	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
-	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>706061484183-k30gf3mep0j1efg1kki5v1g8dvg6kan7.apps.googleusercontent.com</string>
+	<string>1057842322342-hkvksp2b77oal4oa1tciptualtirb89r.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.706061484183-k30gf3mep0j1efg1kki5v1g8dvg6kan7</string>
+	<string>com.googleusercontent.apps.1057842322342-hkvksp2b77oal4oa1tciptualtirb89r</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCh_R982LwXQkP9gDxN8Cfmc9NeZfx6z0Y</string>
+	<string>AIzaSyAoKTDffCk6gPMMRJwYOPAMMx_o0FEAmFQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>706061484183</string>
+	<string>1057842322342</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>io.instamobile.dating.swift</string>
+	<string>interview.app.com</string>
 	<key>PROJECT_ID</key>
-	<string>ios-app-templates</string>
+	<string>interviewclone-df5a9</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ios-app-templates.appspot.com</string>
+	<string>interviewclone-df5a9.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
 	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:706061484183:ios:6b84bdd517867245</string>
-	<key>DATABASE_URL</key>
-	<string>https://ios-app-templates.firebaseio.com</string>
+	<string>1:1057842322342:ios:eae1a78a117745081bcd67</string>
 </dict>
 </plist>

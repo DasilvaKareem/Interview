@@ -125,9 +125,9 @@ class DatingHostViewController: UIViewController, UITabBarControllerDelegate {
     }
     
     fileprivate func onboardingCoordinator(uiConfig: ATCUIGenericConfigurationProtocol) -> ATCOnboardingCoordinatorProtocol {
-        let landingViewModel = ATCLandingScreenViewModel(imageIcon: "fire-icon",
-                                                         title: "Find your soul mate".localizedInApp,
-                                                         subtitle: "Match and chat with people you like from your area.".localizedInApp,
+        let landingViewModel = ATCLandingScreenViewModel(imageIcon: "account-male-icon",
+                                                         title: "Find your perfect job".localizedInApp,
+                                                         subtitle: "Match and chat with people you like to work for.".localizedInApp,
                                                          loginString: "Log In".localizedInApp,
                                                          signUpString: "Sign Up".localizedInApp)
         let loginViewModel = ATCLoginScreenViewModel(contactPointField: "E-mail or phone number".localizedInApp,
@@ -292,12 +292,13 @@ class DatingHostViewController: UIViewController, UITabBarControllerDelegate {
     }
     
     fileprivate func titleView() -> UIView {
-        let titleView = UIImageView(image: UIImage.localImage("fire-icon", template: true))
+        let titleView = UIImageView(image: UIImage(systemName: "door.right.hand.open"))
         titleView.snp.makeConstraints({ (maker) in
             maker.width.equalTo(30.0)
             maker.height.equalTo(30.0)
         })
-        titleView.tintColor = uiConfig.mainThemeForegroundColor
+       
+        titleView.tintColor = UIColor(hexString: "#A8c4A3")
         return titleView
     }
     
@@ -395,7 +396,7 @@ class DatingOnboardingUIConfig: ATCOnboardingConfigurationProtocol {
         loginButtonTextColor = config.mainThemeBackgroundColor
         signUpButtonFont = config.boldLargeFont
         signUpButtonBackgroundColor = config.mainThemeBackgroundColor
-        signUpButtonTextColor = UIColor(hexString: "#eb5a6d")
+        signUpButtonTextColor = UIColor(hexString: "#a8c4a3")
         signUpButtonBorderColor = UIColor(hexString: "#B0B3C6")
         separatorColor = config.mainTextColor
         separatorFont = config.mediumBoldFont
@@ -421,8 +422,8 @@ extension DatingHostViewController: ATCDatingProfileEditManagerDelegate {
             || datingProfile.age == nil
             || datingProfile.school == nil
             || datingProfile.hasDefaultAvatar {
-            let alertVC = UIAlertController(title: "Let's complete your dating profile".localizedInApp,
-                                            message: "Welcome to Instaswipey. Let's complete your dating profile to allow other people to express interest in you.".localizedInApp,
+            let alertVC = UIAlertController(title: "Let's complete your profile".localizedInApp,
+                                            message: "Welcome to Innervue. You must complete your profile before you can continue.".localizedInApp,
                                             preferredStyle: .alert)
             alertVC.addAction(UIAlertAction(title: "Let's go".localizedInApp, style: .default, handler: { (action) in
                 if datingProfile.hasDefaultAvatar {

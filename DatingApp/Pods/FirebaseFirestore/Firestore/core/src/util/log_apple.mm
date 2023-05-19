@@ -18,11 +18,12 @@
 
 #if defined(__APPLE__)
 
-#import <FirebaseCore/FIRLogger.h>
 #import <Foundation/Foundation.h>
 
 #include <cstdarg>
 #include <string>
+
+#import "FirebaseCore/Extension/FIRLogger.h"
 
 #include "Firestore/core/src/util/string_apple.h"
 
@@ -32,7 +33,7 @@ namespace util {
 
 namespace {
 
-const FIRLoggerService kFIRLoggerFirestore = @"[Firebase/Firestore]";
+const FIRLoggerService kFIRLoggerFirestore = @"[FirebaseFirestore]";
 
 // Translates a C++ LogLevel to the equivalent Objective-C FIRLoggerLevel
 FIRLoggerLevel ToFIRLoggerLevel(LogLevel level) {
@@ -84,7 +85,7 @@ bool LogIsLoggable(LogLevel level) {
 }
 
 void LogMessage(LogLevel level, const std::string& message) {
-  LogMessageV(level, @"%s", message.c_str());
+  LogMessageV(level, @"%@", MakeNSString(message));
 }
 
 }  // namespace util

@@ -32,6 +32,7 @@ open class ATCUser: NSObject, ATCGenericBaseModel, NSCoding {
     var isOnline: Bool = false
     var lastOnlineDateTime: Date?
     var photos: [String]? = nil
+    var videos: [String]? = nil
     var location: ATCLocation? = nil
     var hasDefaultAvatar: Bool = true
     var isAdmin: Bool = false
@@ -46,6 +47,7 @@ open class ATCUser: NSObject, ATCGenericBaseModel, NSCoding {
          pushToken: String? = nil,
          pushKitToken: String? = nil,
          photos: [String]? = [],
+         videos: [String]? = [],
          isOnline: Bool = false,
          lastOnlineDateTime: Date? = nil,
          location: ATCLocation? = nil,
@@ -61,6 +63,7 @@ open class ATCUser: NSObject, ATCGenericBaseModel, NSCoding {
         self.pushToken = pushToken
         self.pushKitToken = pushKitToken
         self.photos = photos
+        self.videos = videos
         self.isOnline = isOnline
         self.lastOnlineDateTime = lastOnlineDateTime
         self.location = location

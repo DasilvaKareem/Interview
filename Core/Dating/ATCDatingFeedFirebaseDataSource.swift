@@ -42,11 +42,12 @@ class ATCDatingFeedFirebaseDataSource: ATCDatingFeedDataSource {
 
     func fetchDatingRecommendations() {
         guard let viewer = self.viewer else { return }
-
+        //Filter by location
         let distanceMap: [String: Double] = ["5 miles": 5.0, "10 miles": 10.0, "20 miles": 20.0, "50 miles": 50.0, "100 miles": 100.0]
         let distanceThresholdInMiles: Double = distanceMap[viewer.locationPreference ?? ""] ?? 100000
 
         // First, we fetch all the users reported or blocked by the viewer, so we don't show those profiles again
+        //Filter By Blocked List
         firebaseReporter.userIDsBlockedOrReported(by: viewer) {[weak self] (blockedUsers) in
             guard let `self` = self else { return }
 
@@ -79,12 +80,12 @@ class ATCDatingFeedFirebaseDataSource: ATCDatingFeedDataSource {
                     }
 
                     // We filter out all the users who were reported or blocked by the current viewer
-                    users = users.filter({ (profile) -> Bool in
+                 /*   users = users.filter({ (profile) -> Bool in
                         if let uid = profile.uid {
                             return !blockedUsers.contains(uid)
                         }
                         return true
-                    })
+                    })*/
 
                     // We filter out all users who've been swiped already
                     users = users.filter({ (profile) -> Bool in
@@ -103,16 +104,16 @@ class ATCDatingFeedFirebaseDataSource: ATCDatingFeedDataSource {
 
                     // We filter out all users who don't match the location preference
                     // If viewer didn't set location preference, show everyone
-                    if let viewLocation = viewer.location {
+               /*     if let viewLocation = viewer.location {
                         users = users.filter({ (profile) -> Bool in
                             guard let otherProfileLocation = profile.location else { return false } // filter out everyone without a location
                             return otherProfileLocation.isInRange(to: viewLocation, by: distanceThresholdInMiles) // keep only those within range
                         })
-                    }
+                    }*/
                     // We also filter out users who have uncompleted profiles
-                    users = users.filter({ (profile) -> Bool in
+                   /* users = users.filter({ (profile) -> Bool in
                         return profile.isComplete
-                    })
+                    })*/
                     self.recommendations = users
                     // Now that we have everything from the server, we update the UI:
                     self.delegate?.genericCollectionViewControllerDataSource(self, didLoadTop: users)

@@ -16,7 +16,7 @@ class ATCDatingSettingsViewController: QuickTableViewController {
 
         tableContents = [
             Section(title: "Discovery", rows: [
-                SwitchRow(text: "Show me on Tinder", switchValue: true, action: { _ in }),
+                SwitchRow(text: "Show me on Interview", switchValue: true, action: { _ in }),
                 ], footer: "While turned off, you will not be shown in the card stack. You can still see and chat with your matches."),
             Section(title: "Push Notifications", rows: [
                 SwitchRow(text: "New Matches", switchValue: true, action: { _ in }),
@@ -25,8 +25,8 @@ class ATCDatingSettingsViewController: QuickTableViewController {
                 SwitchRow(text: "Top Picks", switchValue: false, action: { _ in }),
                 ]),
             RadioSection(title: "Gender", options: [
-                OptionRow(text: "Female", isSelected: true, action: didToggleSelection()),
-                OptionRow(text: "Male", isSelected: false, action: didToggleSelection()),
+                OptionRow(text: "Recruiter", isSelected: true, action: didToggleSelection()),
+                OptionRow(text: "Job Seeker", isSelected: false, action: didToggleSelection()),
                 OptionRow(text: "Don't show", isSelected: false, action: didToggleSelection())
                 ], footer: "You will get recommendations based on your gender."),
             RadioSection(title: "Maximum Distance", options: [

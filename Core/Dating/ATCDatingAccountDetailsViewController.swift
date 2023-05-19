@@ -67,9 +67,10 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                 row.value = datingProfile.bio
                 row.tag = "bio"
             }
+        
             <<< TextRow(){ row in
-                row.title = "Age"
-                row.placeholder = "Your age"
+                row.title = "Graduation Year "
+                row.placeholder = "e.g. 2021"
                 row.value = datingProfile.age
                 row.tag = "age"
             }
@@ -80,26 +81,48 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                 row.tag = "school"
             }
             <<< ActionSheetRow<String>() {
-                $0.title = "Gender"
-                $0.selectorTitle = "Choose your gender"
-                $0.options = ["Female","Male"]
-                $0.value = datingProfile.gender
-                $0.tag = "gender"
+                $0.title = "Status"
+                $0.selectorTitle = "Choose your status"
+                $0.options = ["Job Seeker","Recruiter"]
+//                $0.value = datingProfile.gender
+//                $0.tag = "gender"
             }
+        <<< ActionSheetRow<String>() {
+            $0.title = "Employment Type"
+            $0.selectorTitle = "Choose your status"
+            $0.options = ["Part time","Full time","Internship","Co-op"]
+//            $0.value = datingProfile.gender
+//            $0.tag = "employmentType"
+        }
+        <<< ActionSheetRow<String>() {
+            $0.title = "Industry"
+            $0.selectorTitle = "Choose your desired industry"
+            $0.options = ["Sales","Developer", "Customer Service", "Marketing", "Accounting"]
+//            $0.value = datingProfile.gender
+//            $0.tag = "gender"
+        }
             +++ Eureka.Section("Preferences")
             <<< ActionSheetRow<String>() {
-                $0.title = "Gender Preference"
-                $0.selectorTitle = "Match me with people of this gender"
-                $0.options = ["Male", "Female", "Both"]
+                $0.title = "Status Preference"
+                $0.selectorTitle = "Match me with "
+                $0.options = ["Job Seeker", "Recruiter", "Both"]
                 $0.value = datingProfile.genderPreference
                 $0.tag = "gender_preference"
             }
             <<< ActionSheetRow<String>() {
                 $0.title = "Location Radius"
-                $0.selectorTitle = "Match me with people in this area"
+                $0.selectorTitle = "Match me with jobs in this area"
                 $0.options = ["5 miles", "10 miles", "20 miles", "50 miles", "100 miles"]
                 $0.value = datingProfile.locationPreference
                 $0.tag = "location_preference"
+            }
+        
+            <<< ActionSheetRow<String>() {
+                $0.title = "Salary"
+                $0.selectorTitle = "Choose your desired Salary"
+                $0.options = ["$40-60K","$60-80K", "$80-100K", "$100K"]
+            //                $0.value = datingProfile.gender
+            //                $0.tag = "gender"
             }
             +++ Eureka.Section("Private Details")
             <<< TextRow(){ row in

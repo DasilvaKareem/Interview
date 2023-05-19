@@ -14,7 +14,7 @@ class DatingUIConfiguration: ATCUIGenericConfigurationProtocol {
     let colorGray9: UIColor = UIColor.darkModeColor(hexString: "#f4f4f4")
 
     let mainThemeBackgroundColor: UIColor = UIColor.modedColor(light: "#ffffff", dark: "#121212")
-    let mainThemeForegroundColor: UIColor = UIColor(hexString: "#eb5a6d")
+    let mainThemeForegroundColor: UIColor = UIColor(hexString: "#a8c4a3")
     let mainTextColor: UIColor = UIColor(hexString: "#464646").darkModed
     let mainSubtextColor: UIColor = UIColor(hexString: "#7c7c7c").darkModed
     let statusBarStyle: UIStatusBarStyle = .default
@@ -30,8 +30,9 @@ class DatingUIConfiguration: ATCUIGenericConfigurationProtocol {
     let boldSuperLargeFont = UIFont.boldSystemFont(ofSize: 30)
     let italicMediumFont = UIFont(name: "TrebuchetMS-Italic", size: 14)!
 
+    
     let homeImage = UIImage.localImage("home-icon", template: true)
-
+   
     func lightFont(size: CGFloat) -> UIFont {
         return UIFont.systemFont(ofSize: size)
     }

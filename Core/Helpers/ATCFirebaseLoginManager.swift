@@ -24,26 +24,23 @@ public class ATCFirebaseLoginManager {
 
     static func signIn(email: String, pass: String, completionBlock: @escaping (_ user: ATCUser?, _ errorMessage: String?) -> Void) {
         Auth.auth().signIn(withEmail: email, password: pass) { (result, error) in
-            if let error = error, let errCode = AuthErrorCode(rawValue: error._code) {
-                switch errCode {
-                    case .userNotFound:
-                        Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
-                            if error == nil {
-                                ATCFirebaseLoginManager.signIn(email: email, pass: pass, completionBlock: completionBlock)
-                            }
+            if let error = error as NSError? {
+                if error == nil {
+           
+                    Auth.auth().createUser(withEmail: email, password: pass) { (authResult, error) in
+                        if error == nil {
+                            signIn(email: email, pass: pass, completionBlock: completionBlock)
+                        }
                     }
-                    case .wrongPassword:
-                        completionBlock(nil, "E-mail already exists. Did you sign up with a different method (email, facebook, apple)?".localizedCore)
-                        return
-                    default:
-                        return
+               
+                    //completionBlock(nil, "E-mail already exists. Did you sign up with a different method (email, facebook, apple)?".localizedCore)
+              
                 }
             } else {
-                completionBlock(ATCFirebaseLoginManager.atcUser(for: result?.user), nil)
+                completionBlock(atcUser(for: result?.user), nil)
             }
         }
     }
-
     static func atcUser(for firebaseUser: User?) -> ATCUser? {
         guard let fUser = firebaseUser else { return nil }
         return ATCUser(uid: fUser.uid,

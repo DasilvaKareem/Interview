@@ -37,7 +37,7 @@ class ATCMessengerUserAdapter: ATCGenericCollectionRowAdapter {
             cell.nameLabel.font = uiConfig.boldSmallFont
             cell.nameLabel.textColor = uiConfig.mainTextColor
             
-            cell.borderView.backgroundColor = UIColor.darkModeColor(hexString: "#e6e6e6")
+            cell.borderView.backgroundColor = UIColor.darkModeColor(hexString: "#A8c4A3")
             
             cell.addButton.isHidden = friends.contains(where: { (u) -> Bool in
                 return u.uid == user.uid

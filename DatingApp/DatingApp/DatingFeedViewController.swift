@@ -58,18 +58,19 @@ class DatingFeedViewController: UIViewController {
         super.viewDidLoad()
         self.dataSource.delegate = self
         self.view.backgroundColor = UIColor(hexString: "f6f7fa")
-
-        dislikeButton.configure(image: UIImage.localImage("cross-filled-icon", template: true).image(resizedTo: CGSize(width: 30, height: 30))!,
+        let dislikeImg = UIImage(systemName: "hand.thumbsdown.fill")
+        dislikeButton.configure(image: dislikeImg!.image(resizedTo: CGSize(width: 30, height: 30))!,
                                 tintColor: UIColor(hexString: "#fd1b61"),
                                 bgColor: .white)
         dislikeButton.addTarget(self, action: #selector(didTapDislikeButton), for: .touchUpInside)
 
-        superLikeButton.configure(image: UIImage.localImage("star-filled-icon-1", template: true).image(resizedTo: CGSize(width: 25, height: 25))!,
+       /* superLikeButton.configure(image: UIImage.localImage("star-filled-icon-1", template: true).image(resizedTo: CGSize(width: 25, height: 25))!,
                                   tintColor: UIColor(hexString: "#0495e3"),
                                   bgColor: .white)
-        superLikeButton.addTarget(self, action: #selector(didTapSuperLikeButton), for: .touchUpInside)
+       superLikeButton.addTarget(self, action: #selector(didTapSuperLikeButton), for: .touchUpInside)*/
 
-        likeButton.configure(image: UIImage.localImage("heart-filled-icon", template: true).image(resizedTo: CGSize(width: 26, height: 26))!,
+        let img = UIImage(systemName: "hand.thumbsup.fill")
+        likeButton.configure(image: img!.image(resizedTo: CGSize(width: 30, height: 30))!,
                              tintColor: UIColor(hexString: "#11e19d"),
                              bgColor: .white)
         likeButton.addTarget(self, action: #selector(didTapLikeButton), for: .touchUpInside)

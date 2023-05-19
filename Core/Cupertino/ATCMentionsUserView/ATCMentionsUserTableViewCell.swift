@@ -18,7 +18,7 @@ class ATCMentionsUserTableViewCell: UITableViewCell {
         self.backgroundColor = uiConfig.backgroundColor
         self.lblName.text = userData.fullName()
         self.lblName.textColor = uiConfig.inputTextViewTextColor
-        self.seperatorLabel.backgroundColor = UIColor.darkModeColor(hexString: "#e6e6e6")
+        self.seperatorLabel.backgroundColor = UIColor.darkModeColor(hexString: "#A8c4A3")
         if let imagePath = userData.profilePictureURL {
             self.userImgView.kf.setImage(with: URL(string: imagePath))
         }

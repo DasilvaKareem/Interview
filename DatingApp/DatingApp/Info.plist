@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Instaswipey</string>
+	<string>Innervue</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -43,14 +43,20 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This app uses your photo library to upload videos</string>
 	<key>NSCameraUsageDescription</key>
-	<string>This app is using your phone's camera enabling you to upload more photos to your dating profile.</string>
+	<string>This app is using your phone's camera enabling you to upload more photos to your profile.</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>This app uses Face ID to keep you logged in.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>This app is using your location to recommend people around you.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app is using your location to recommend dates around you.</string>
+	<string>This app is using your location to recommend people around you.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app uses your photo library to upload videos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app uses your photo library to upload videos</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

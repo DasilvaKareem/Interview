@@ -60,6 +60,59 @@ class ATCProfileFirebaseUpdater: ATCProfileUpdaterProtocol {
                 })
         })
     }
+    func uploadVideo(videoURL: URL, user: ATCUser, isProfileVideo: Bool, completion: @escaping (_ success: Bool) -> Void) {
+        self.uploadFile(fileURL: videoURL, completion: { [weak self] (url) in
+            guard let self = self, let videoURL = url?.absoluteString, let uid = user.uid else {
+                completion(false)
+                return
+            }
+            
+            var videos: [String] = (user.videos ?? []) + [videoURL]
+            if videos.count == 0 && isProfileVideo {
+                videos = [videoURL]
+            }
+            
+            let data = ((isProfileVideo) ?
+                ["videos": videos, "profileVideoURL": videoURL] :
+                ["videos": videos])
+            
+            Firestore.firestore().collection(self.usersTable).document(uid).setData(data, merge: true) { error in
+                user.videos = videos
+                if isProfileVideo {
+                   // user.profileVideoURL = videoURL
+                }
+                completion(error == nil)
+            }
+        })
+    }
+
+    private func uploadFile(fileURL: URL, completion: @escaping (_ url: URL?) -> Void) {
+        let storageRef = Storage.storage().reference().child("videos").child(UUID().uuidString + ".mov")
+        let metadata = StorageMetadata()
+        metadata.contentType = "video/quicktime" // Change the content type according to your video format
+        
+        let uploadTask = storageRef.putFile(from: fileURL, metadata: metadata) { (metadata, error) in
+            if let error = error {
+                print("Error uploading video: \(error.localizedDescription)")
+                completion(nil)
+            } else {
+                storageRef.downloadURL { (url, error) in
+                    guard let downloadURL = url else {
+                        print("Error getting download URL: \(error?.localizedDescription ?? "")")
+                        completion(nil)
+                        return
+                    }
+                    completion(downloadURL)
+                }
+            }
+        }
+        
+        // Observe progress changes if needed
+        uploadTask.observe(.progress) { snapshot in
+            let percentComplete = 100.0 * Double(snapshot.progress!.completedUnitCount) / Double(snapshot.progress!.totalUnitCount)
+            print("Upload progress: \(percentComplete)%")
+        }
+    }
 
     func update(user: ATCUser, email: String, firstName: String, lastName: String, username: String, completion: @escaping (_ success: Bool) -> Void) {
         guard let uid = user.uid else { return }

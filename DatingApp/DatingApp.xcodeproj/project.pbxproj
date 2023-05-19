@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0AE09987115C9B1291CC2D /* Pods_DatingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EAD8ED832FDF6043C4C174 /* Pods_DatingApp.framework */; };
 		1719BA13233851BD008595C8 /* MessageKitLocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1719BA12233851BD008595C8 /* MessageKitLocationItem.swift */; };
 		17244E8F234EA40A00D31F7E /* CPKProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17244E8B234EA40A00D31F7E /* CPKProgressHUD.swift */; };
 		17244E90234EA40A00D31F7E /* CPKEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17244E8D234EA40A00D31F7E /* CPKEmptyView.swift */; };
@@ -447,11 +448,11 @@
 		30EAF21C23A3D4DD00795959 /* ATCThirdPartyLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30EAF21A23A3D4DD00795959 /* ATCThirdPartyLocalizable.strings */; };
 		30EAF21E23A3D56700795959 /* InputBarRecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EAF21D23A3D56600795959 /* InputBarRecordItem.swift */; };
 		30EDB19423AB4DE1006B5FC8 /* Misc.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EDB19323AB4DE1006B5FC8 /* Misc.xcassets */; };
-		72F4BA44BB6F2D9E9A6F720C /* Pods_DatingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4AC3C193CD0658C8372EF7 /* Pods_DatingApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08D374AAFADB4F4C54FE3AF0 /* Pods-DatingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingApp.release.xcconfig"; path = "Target Support Files/Pods-DatingApp/Pods-DatingApp.release.xcconfig"; sourceTree = "<group>"; };
+		0888AA7DA02213B3BC5E302D /* Pods-DatingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingApp.debug.xcconfig"; path = "Target Support Files/Pods-DatingApp/Pods-DatingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0B72942FA694CC14369D8619 /* Pods-DatingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingApp.release.xcconfig"; path = "Target Support Files/Pods-DatingApp/Pods-DatingApp.release.xcconfig"; sourceTree = "<group>"; };
 		1719BA12233851BD008595C8 /* MessageKitLocationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageKitLocationItem.swift; sourceTree = "<group>"; };
 		17244E8B234EA40A00D31F7E /* CPKProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPKProgressHUD.swift; sourceTree = "<group>"; };
 		17244E8D234EA40A00D31F7E /* CPKEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPKEmptyView.swift; sourceTree = "<group>"; };
@@ -899,8 +900,7 @@
 		30EAF21B23A3D4DD00795959 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ATCThirdPartyLocalizable.strings; sourceTree = "<group>"; };
 		30EAF21D23A3D56600795959 /* InputBarRecordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputBarRecordItem.swift; sourceTree = "<group>"; };
 		30EDB19323AB4DE1006B5FC8 /* Misc.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Misc.xcassets; sourceTree = "<group>"; };
-		AA4AC3C193CD0658C8372EF7 /* Pods_DatingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C228CC5A06E10B27C96A796D /* Pods-DatingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatingApp.debug.xcconfig"; path = "Target Support Files/Pods-DatingApp/Pods-DatingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		69EAD8ED832FDF6043C4C174 /* Pods_DatingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -909,7 +909,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30121246246F99B00043B5C2 /* StoreKit.framework in Frameworks */,
-				72F4BA44BB6F2D9E9A6F720C /* Pods_DatingApp.framework in Frameworks */,
+				0D0AE09987115C9B1291CC2D /* Pods_DatingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,8 +919,8 @@
 		12B0606187EF75CB9943A0F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C228CC5A06E10B27C96A796D /* Pods-DatingApp.debug.xcconfig */,
-				08D374AAFADB4F4C54FE3AF0 /* Pods-DatingApp.release.xcconfig */,
+				0888AA7DA02213B3BC5E302D /* Pods-DatingApp.debug.xcconfig */,
+				0B72942FA694CC14369D8619 /* Pods-DatingApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2287,7 +2287,7 @@
 			isa = PBXGroup;
 			children = (
 				30121245246F99B00043B5C2 /* StoreKit.framework */,
-				AA4AC3C193CD0658C8372EF7 /* Pods_DatingApp.framework */,
+				69EAD8ED832FDF6043C4C174 /* Pods_DatingApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2299,11 +2299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 178ECB5B21F929F000E58A80 /* Build configuration list for PBXNativeTarget "DatingApp" */;
 			buildPhases = (
-				63562A693A936B4F2F3A0C0C /* [CP] Check Pods Manifest.lock */,
+				B16E1C3D8E49EED9DCF7BBCA /* [CP] Check Pods Manifest.lock */,
 				178ECB4521F929EB00E58A80 /* Sources */,
 				178ECB4621F929EB00E58A80 /* Frameworks */,
 				178ECB4721F929EB00E58A80 /* Resources */,
-				A8E4F103453CE828DF2F894B /* [CP] Embed Pods Frameworks */,
+				6A637FC124ED363B6E3480A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2442,7 +2442,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		63562A693A936B4F2F3A0C0C /* [CP] Check Pods Manifest.lock */ = {
+		6A637FC124ED363B6E3480A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B16E1C3D8E49EED9DCF7BBCA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2462,23 +2479,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A8E4F103453CE828DF2F894B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatingApp/Pods-DatingApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3019,7 +3019,7 @@
 		};
 		178ECB5C21F929F000E58A80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C228CC5A06E10B27C96A796D /* Pods-DatingApp.debug.xcconfig */;
+			baseConfigurationReference = 0888AA7DA02213B3BC5E302D /* Pods-DatingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
@@ -3046,7 +3046,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 339H39SFM9;
-				EXCLUDED_ARCHS = arm64;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
@@ -3059,13 +3058,13 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = DatingApp/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_CFBundleDisplayName = Innervue;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = zbellis.instaswipey;
+				PRODUCT_BUNDLE_IDENTIFIER = intervue.app.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3074,7 +3073,7 @@
 		};
 		178ECB5D21F929F000E58A80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08D374AAFADB4F4C54FE3AF0 /* Pods-DatingApp.release.xcconfig */;
+			baseConfigurationReference = 0B72942FA694CC14369D8619 /* Pods-DatingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
@@ -3113,13 +3112,13 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INFOPLIST_FILE = DatingApp/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_CFBundleDisplayName = Innervue;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = zbellis.instaswipey;
+				PRODUCT_BUNDLE_IDENTIFIER = intervue.app.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

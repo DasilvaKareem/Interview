@@ -199,6 +199,8 @@ extension ATCProfileViewController : UIImagePickerControllerDelegate, UINavigati
         }
     }
     
+    
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }

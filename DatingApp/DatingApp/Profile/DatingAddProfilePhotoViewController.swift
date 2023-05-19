@@ -7,7 +7,10 @@
 //
 
 import Photos
+import AVKit
 import UIKit
+import MobileCoreServices
+
 
 protocol DatingAddProfilePhotoViewControllerDelegate: class {
     func addProfilePhotoDidCompleteIn(_ navigationController: UINavigationController?) -> Void
@@ -69,7 +72,7 @@ class DatingAddProfilePhotoViewController: UIViewController {
         let alert = UIAlertController(title: "Add Photo".localizedInApp, message: "", preferredStyle: UIAlertController.Style.actionSheet)
         alert.addAction(UIAlertAction(title: "Import from Library".localizedInApp, style: .default, handler: {[weak self] (action) in
             guard let strongSelf = self else { return }
-            strongSelf.didTapAddImageButton(sourceType: .photoLibrary)
+            strongSelf.didTapAddImageButton(sourceType: .savedPhotosAlbum)
         }))
         alert.addAction(UIAlertAction(title: "Take Photo".localizedInApp, style: .default, handler: {[weak self] (action) in
             guard let strongSelf = self else { return }
@@ -86,6 +89,7 @@ class DatingAddProfilePhotoViewController: UIViewController {
     private func didTapAddImageButton(sourceType: UIImagePickerController.SourceType) {
         let picker = UIImagePickerController()
         picker.delegate = self
+        picker.mediaTypes = [kUTTypeImage as String, kUTTypeMovie as String]
 
         if UIImagePickerController.isSourceTypeAvailable(sourceType) {
             picker.sourceType = sourceType
@@ -126,19 +130,33 @@ extension DatingAddProfilePhotoViewController: UIImagePickerControllerDelegate, 
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
-        if let asset = info[.phAsset] as? PHAsset {
-            let size = CGSize(width: 500, height: 500)
-            PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: nil) { result, info in
-                guard let image = result else {
-                    return
-                }
 
-                self.didAddImage(image)
-            }
-        } else if let image = info[.originalImage] as? UIImage {
-            didAddImage(image)
-        }
-    }
+             if let mediaType = info[.mediaType] as? String {
+                 if mediaType == kUTTypeMovie as String {
+                     if let videoURL = info[.mediaURL] as? URL {
+                         let player = AVPlayer(url: videoURL)
+                         let playerViewController = AVPlayerViewController()
+                         playerViewController.player = player
+                         present(playerViewController, animated: true) {
+                             player.play()
+                         }
+                     }
+                 } else if mediaType == kUTTypeImage as String {
+                     if let asset = info[.phAsset] as? PHAsset {
+                         let size = CGSize(width: 500, height: 500)
+                         PHImageManager.default().requestImage(for: asset, targetSize: size, contentMode: .aspectFit, options: nil) { result, info in
+                             guard let image = result else {
+                                 return
+                             }
+                             self.didAddImage(image)
+                         }
+                     } else if let image = info[.originalImage] as? UIImage {
+                         didAddImage(image)
+                     }
+                 }
+             }
+         }
+    
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
