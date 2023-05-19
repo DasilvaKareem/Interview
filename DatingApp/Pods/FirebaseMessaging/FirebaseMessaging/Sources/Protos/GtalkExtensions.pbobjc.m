@@ -31,6 +31,7 @@
 
  #import "GtalkExtensions.pbobjc.h"
 // @@protoc_insertion_point(imports)
+#import <libkern/OSAtomic.h>
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"

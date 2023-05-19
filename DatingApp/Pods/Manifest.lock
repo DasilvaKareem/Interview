@@ -397,7 +397,7 @@ PODS:
   - nanopb/encode (1.30905.0)
   - pop (1.0.12)
   - PromisesObjC (1.2.12)
-  - Protobuf (3.22.3)
+  - Protobuf (3.23.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2.1)
@@ -491,8 +491,8 @@ SPEC CHECKSUMS:
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Protobuf: d03938d5f7e974a97964fb0567771e36fbe9ecce
+  Protobuf: 3dd214698ddb7afd832da281c777b2e9facef401
 
 PODFILE CHECKSUM: a5376441de97d663b6185b221970b2bf1e7a4e6a
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1
