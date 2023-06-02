@@ -94,6 +94,7 @@ open class ATCUser: NSObject, ATCGenericBaseModel, NSCoding {
         aCoder.encode(isOnline, forKey: "isOnline")
         aCoder.encode(lastOnlineDateTime, forKey: "lastOnlineTimestamp")
         aCoder.encode(photos, forKey: "photos")
+        aCoder.encode(videos, forKey: "videos")
         aCoder.encode(location, forKey: "location")
         aCoder.encode(isAdmin, forKey: "isAdmin")
         if let adminVendorID = adminVendorID {
@@ -111,6 +112,7 @@ open class ATCUser: NSObject, ATCGenericBaseModel, NSCoding {
                   pushToken: aDecoder.decodeObject(forKey: "pushToken") as? String ?? "",
                   pushKitToken: aDecoder.decodeObject(forKey: "pushKitToken") as? String ?? "",
                   photos: aDecoder.decodeObject(forKey: "photos") as? [String] ?? [],
+                  videos: aDecoder.decodeObject(forKey: "videos") as? [String] ?? [],
                   isOnline: aDecoder.decodeBool(forKey: "isOnline"),
                   lastOnlineDateTime: aDecoder.decodeObject(forKey: "lastOnlineTimestamp") as? Date ?? nil,
                   location: aDecoder.decodeObject(forKey: "location") as? ATCLocation,
@@ -160,6 +162,7 @@ open class ATCUser: NSObject, ATCGenericBaseModel, NSCoding {
             "pushToken": pushToken ?? "",
             "pushKitToken": pushKitToken ?? "",
             "photos": photos ?? "",
+            "videos": videos ?? "",
             ]
         if let location = location {
             rep["location"] = location.representation
@@ -192,6 +195,7 @@ open class ATCUser: NSObject, ATCGenericBaseModel, NSCoding {
         self.pushToken = jsonDict["pushToken"] as? String
         self.pushKitToken = jsonDict["pushKitToken"] as? String
         self.photos = jsonDict["photos"] as? [String]
+        self.videos = jsonDict["videos"] as? [String]
         self.isAdmin = (jsonDict["isAdmin"] as? Bool) ?? false
         self.isOnline = (jsonDict["isOnline"] as? Bool) ?? false
         self.lastOnlineDateTime = (jsonDict["lastOnlineTimestamp"] as? Timestamp)?.dateValue()

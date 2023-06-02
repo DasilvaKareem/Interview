@@ -9,6 +9,7 @@
 import FirebaseFirestore
 import FirebaseStorage
 import UIKit
+import AVFoundation
 
 class ATCProfileFirebaseUpdater: ATCProfileUpdaterProtocol {
     var updateInProgress: Bool = false
@@ -60,7 +61,28 @@ class ATCProfileFirebaseUpdater: ATCProfileUpdaterProtocol {
                 })
         })
     }
+  
     func uploadVideo(videoURL: URL, user: ATCUser, isProfileVideo: Bool, completion: @escaping (_ success: Bool) -> Void) {
+        
+        var thumbnailURL:String?
+        
+        do {
+            let asset = AVURLAsset(url: videoURL, options: nil)
+            let imgGenerator = AVAssetImageGenerator(asset: asset)
+            imgGenerator.appliesPreferredTrackTransform = true
+            let cgImage = try imgGenerator.copyCGImage(at: CMTimeMake(value: 0, timescale: 1), actualTime: nil)
+            let thumbnail = UIImage(cgImage: cgImage)
+            self.uploadImage(thumbnail, completion: {[weak self] (url) in
+                guard let `self` = self, let url = url?.absoluteString, let uid = user.uid else {
+                    completion(false)
+                    return
+                }
+                thumbnailURL = url
+            })
+        } catch {
+            thumbnailURL = ""
+        }
+        
         self.uploadFile(fileURL: videoURL, completion: { [weak self] (url) in
             guard let self = self, let videoURL = url?.absoluteString, let uid = user.uid else {
                 completion(false)
@@ -71,9 +93,9 @@ class ATCProfileFirebaseUpdater: ATCProfileUpdaterProtocol {
             if videos.count == 0 && isProfileVideo {
                 videos = [videoURL]
             }
-            
+      
             let data = ((isProfileVideo) ?
-                ["videos": videos, "profileVideoURL": videoURL] :
+                ["videos": videos, "profileVideoURL": videoURL, "Thumbnail":thumbnailURL] :
                 ["videos": videos])
             
             Firestore.firestore().collection(self.usersTable).document(uid).setData(data, merge: true) { error in

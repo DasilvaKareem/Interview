@@ -11,6 +11,7 @@ import UIKit
 protocol ATCProfileUpdaterProtocol: class {
     func removePhoto(url: String, user: ATCUser, completion: @escaping () -> Void)
     func uploadPhoto(image: UIImage, user: ATCUser, isProfilePhoto: Bool, completion: @escaping (_ success: Bool) -> Void)
+    func uploadVideo(videoURL: URL, user: ATCUser, isProfileVideo: Bool, completion: @escaping (_ success: Bool) -> Void)
     func update(user: ATCUser,
                 email: String,
                 firstName: String,

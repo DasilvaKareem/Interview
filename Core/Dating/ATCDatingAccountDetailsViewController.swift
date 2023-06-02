@@ -84,22 +84,22 @@ class ATCDatingAccountDetailsViewController: FormViewController , ATCDatingProfi
                 $0.title = "Status"
                 $0.selectorTitle = "Choose your status"
                 $0.options = ["Job Seeker","Recruiter"]
-//                $0.value = datingProfile.gender
-//                $0.tag = "gender"
+                $0.value = datingProfile.gender
+                $0.tag = "gender"
             }
         <<< ActionSheetRow<String>() {
             $0.title = "Employment Type"
             $0.selectorTitle = "Choose your status"
             $0.options = ["Part time","Full time","Internship","Co-op"]
-//            $0.value = datingProfile.gender
-//            $0.tag = "employmentType"
+            $0.value = datingProfile.gender
+          //$0.tag = "school"
         }
         <<< ActionSheetRow<String>() {
             $0.title = "Industry"
             $0.selectorTitle = "Choose your desired industry"
             $0.options = ["Sales","Developer", "Customer Service", "Marketing", "Accounting"]
 //            $0.value = datingProfile.gender
-//            $0.tag = "gender"
+          //  $0.tag = "gender"
         }
             +++ Eureka.Section("Preferences")
             <<< ActionSheetRow<String>() {

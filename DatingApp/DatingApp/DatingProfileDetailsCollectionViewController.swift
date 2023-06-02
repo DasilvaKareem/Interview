@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import AVFoundation
+import AVKit
 protocol DatingProfileDetailsCollectionViewControllerDelegate: class {
     func datingProfileDetailsViewControllerDidTapLike() -> Void
     func datingProfileDetailsViewControllerDidTapDislike() -> Void
@@ -200,22 +201,21 @@ class DatingProfileDetailsCollectionViewController: ATCGenericCollectionViewCont
             maker.right.equalTo(actionBar.snp_rightMargin)
             maker.top.equalTo(actionBar)
         }
+        var img = UIImage(systemName: "hand.thumbsdown.fill")
 
-        dislikeButton.configure(image: UIImage.localImage("cross-filled-icon", template: true).image(resizedTo: CGSize(width: 30, height: 30))!,
+        dislikeButton.configure(image: img!.image(resizedTo: CGSize(width: 30, height: 30))!,
                                 tintColor: UIColor(hexString: "#fd1b61"),
                                 bgColor: .white)
 
-        superLikeButton.configure(image: UIImage.localImage("star-filled-icon-1", template: true).image(resizedTo: CGSize(width: 25, height: 25))!,
-                                  tintColor: UIColor(hexString: "#0495e3"),
-                                  bgColor: .white)
 
-        likeButton.configure(image: UIImage.localImage("heart-filled-icon", template: true).image(resizedTo: CGSize(width: 26, height: 26))!,
+         img = UIImage(systemName: "hand.thumbsup.fill")
+        likeButton.configure(image: img!.image(resizedTo: CGSize(width: 26, height: 26))!,
                              tintColor: UIColor(hexString: "#11e19d"),
                              bgColor: .white)
 
         let backButton = InstaRoundImageButton.newButton()
         view.addSubview(backButton)
-        backButton.configure(image: UIImage.localImage("arrow-down-icon", template: true).image(resizedTo: CGSize(width: 30, height: 30))!,
+        backButton.configure(image: UIImage.localImage("video-call-icon", template: true).image(resizedTo: CGSize(width: 30, height: 30))!,
                              tintColor: .white,
                              bgColor: uiConfig.mainThemeForegroundColor)
         backButton.snp.makeConstraints { (maker) in
@@ -242,7 +242,22 @@ class DatingProfileDetailsCollectionViewController: ATCGenericCollectionViewCont
     }
 
     @objc func didTapBackButton() {
-        self.dismiss(animated: true, completion: nil)
+        //watch video
+        guard let video = self.profile.videos?.first else {
+
+                
+            print("error")
+            return}
+        print("kareem")
+        print(video)
+        let videoURL = URL(string: video)
+        let player = AVPlayer(url: videoURL!)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
+        //self.dismiss(animated: true, completion: nil)
     }
 
     @objc func didTapLikeButton() {

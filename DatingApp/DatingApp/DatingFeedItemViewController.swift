@@ -186,5 +186,6 @@ class DatingFeedItemViewController: UIViewController {
     
     @IBAction func didTapUndoButton(_ sender: Any) {
         delegate?.didTapUndoButton()
+    
     }
 }

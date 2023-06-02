@@ -448,6 +448,7 @@
 		30EAF21C23A3D4DD00795959 /* ATCThirdPartyLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30EAF21A23A3D4DD00795959 /* ATCThirdPartyLocalizable.strings */; };
 		30EAF21E23A3D56700795959 /* InputBarRecordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EAF21D23A3D56600795959 /* InputBarRecordItem.swift */; };
 		30EDB19423AB4DE1006B5FC8 /* Misc.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EDB19323AB4DE1006B5FC8 /* Misc.xcassets */; };
+		614EFEC02A264CE400813933 /* DatingMyVideosViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614EFEBF2A264CE400813933 /* DatingMyVideosViewController copy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -900,6 +901,7 @@
 		30EAF21B23A3D4DD00795959 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ATCThirdPartyLocalizable.strings; sourceTree = "<group>"; };
 		30EAF21D23A3D56600795959 /* InputBarRecordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputBarRecordItem.swift; sourceTree = "<group>"; };
 		30EDB19323AB4DE1006B5FC8 /* Misc.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Misc.xcassets; sourceTree = "<group>"; };
+		614EFEBF2A264CE400813933 /* DatingMyVideosViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatingMyVideosViewController copy.swift"; sourceTree = "<group>"; };
 		69EAD8ED832FDF6043C4C174 /* Pods_DatingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1003,6 +1005,7 @@
 		178ECB4B21F929EB00E58A80 /* DatingApp */ = {
 			isa = PBXGroup;
 			children = (
+				614EFEBF2A264CE400813933 /* DatingMyVideosViewController copy.swift */,
 				17F491C12206807B0088A2FE /* Profile */,
 				17EF893A21FE5FD8002601EF /* DatingApp.entitlements */,
 				17EF892A21FD201E002601EF /* Details */,
@@ -2773,6 +2776,7 @@
 				178ECDCA21F92A0800E58A80 /* UIImage.swift in Sources */,
 				17AAEDED2309CCB4006EE945 /* MessageReusableView.swift in Sources */,
 				17AAEE182309CCB4006EE945 /* SwitchRow.swift in Sources */,
+				614EFEC02A264CE400813933 /* DatingMyVideosViewController copy.swift in Sources */,
 				17C9487122B1B4DE00F35E70 /* ATChatMessage.swift in Sources */,
 				178ECB4D21F929EB00E58A80 /* AppDelegate.swift in Sources */,
 				17AAEE0B2309CCB4006EE945 /* MessagesDataSource.swift in Sources */,

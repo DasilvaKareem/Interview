@@ -88,11 +88,11 @@ class ATCDatingFeedFirebaseDataSource: ATCDatingFeedDataSource {
                     })*/
 
                     // We filter out all users who've been swiped already
-                    users = users.filter({ (profile) -> Bool in
+                    /*users = users.filter({ (profile) -> Bool in
                         return !swipes.contains(where: { (swipe) -> Bool in
                             return (swipe.swipedProfile == profile.uid)
                         })
-                    })
+                    })*/
 
                     // We filter out all users who don't match the gender preference
                     guard let genderPreference = viewer.genderPreference else { return }

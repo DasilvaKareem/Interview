@@ -251,7 +251,14 @@ class DatingHostViewController: UIViewController, UITabBarControllerDelegate {
             igPhotosPageViewModel.parentViewController = self.profileVC
             items.append(igPhotosPageViewModel)
         }
+        if let profile = self.viewer {
         
+            let igPhotoVC = DatingMyVideosViewController(user: profile, uiConfig: uiConfig, profileUpdater: ATCProfileFirebaseUpdater(usersTable: "users"))
+            let cellHeight: CGFloat = ((profile.videos?.count ?? 0) > 2) ? 300.0 : 175.0
+            let igPhotosPageViewModel = InstaMultiRowPageCarouselViewModel(title: "My Videos".localizedInApp, viewController: igPhotoVC, cellHeight: cellHeight)
+            igPhotosPageViewModel.parentViewController = self.profileVC
+            items.append(igPhotosPageViewModel)
+        }
         // Add the remaining items, such as Account Details, Settings and Contact Us
         items.append(contentsOf: [ATCProfileItem(icon: UIImage.localImage("account-male-icon", template: true),
                                                  title: "Account Details".localizedInApp,
